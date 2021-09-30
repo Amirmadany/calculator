@@ -1,5 +1,4 @@
 <template>
-    {{currentNumber}}
 
     <div class="calculator">
         
@@ -72,9 +71,9 @@ export default {
             value = normalaizeNumber(value)
 
             // if exist (.) dont come add (,) because dont need and also not be ∞ infinity 
-            if(!value.includes('.') && value != '∞')
-                // come add (,) to the number
-                currentNumber.value = Number(value).toLocaleString()
+            // if(!value.includes('.') && value != '∞')
+            //     // come add (,) to the number
+            //     currentNumber.value = Number(value).toLocaleString()
         })
 
         return { 
