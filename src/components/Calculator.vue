@@ -1,4 +1,5 @@
 <template>
+    {{currentNumber}}
 
     <div class="calculator">
         
