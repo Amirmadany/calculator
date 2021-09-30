@@ -67,13 +67,16 @@ export default {
                 return
             }
 
+            // if display user be computed come run this and when his use of mobile dont use (,) option
+            if(window.innerWidth < 800) return
+
             // explode or remove (,) and then give (,) because when number have (,) is not a number so cant add another (,)
             value = normalaizeNumber(value)
 
             // if exist (.) dont come add (,) because dont need and also not be ∞ infinity 
-            // if(!value.includes('.') && value != '∞')
-            //     // come add (,) to the number
-            //     currentNumber.value = Number(value).toLocaleString()
+            if(!value.includes('.') && value != '∞')
+                // come add (,) to the number
+                currentNumber.value = Number(value).toLocaleString()
         })
 
         return { 
