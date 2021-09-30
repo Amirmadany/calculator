@@ -23,6 +23,7 @@ body{
         6px 6px 9px rgb(0 0 0 / 40%);
     border-radius: 1.875rem;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .calculator-input{
